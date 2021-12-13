@@ -13,11 +13,11 @@ An elegant looking weather portal built using vanilla javascript and the open we
 
 
 # Usage
-1) get an api key from https://openweathermap.org/
-1) create the file: js/constants.js
-2) store the api key as following:
+1) Get an api key from https://openweathermap.org/
+1) Create a file: js/constants.js
+2) Store the api key in that file as following:
 export const APIKEY = "MY API KEY";
-3) you can run the app in your browser
+3) You can run the app in your browser
 
 
 # Live demo is hosted at:
