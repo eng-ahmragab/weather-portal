@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-4.6.0/bootstrap.min.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fontawesome-5.15.3/css/all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title> Weather Forecast </title>
+</head>
+
+
+
+
+
+<body>
+    <main class="center-container">
+        <div class="container">
+
+            <div id="errorAlert">
+
+            </div>
+
+
+            <div class="card p-4 m-1 custom-bg text-white text-center shadow">
+                <div class="card-body">
+
+                    <h2 id="cityName" class="text-warning mb-4"> </h2>
+
+                    <canvas id="icon" width="128" height="128" class="mb-3"></canvas>
+
+                    <div id="temperature" class="d-flex justify-content-center">
+                        <h2 id="degree" class="mr-1"> </h2>
+                        <span class="h2"> &#176; </span>
+                        <span id="unit" class="h2"> C </span>
+                    </div>
+
+                    <div id="description"> </div>
+
+                    <form id="searchForm" class="form-inline" action="">
+                        <div class="input-group flex-fill">
+                            <input type="text" id="cityOrZip" class="form-control" placeholder="City or Zip Code .." required />
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-warning">
+                                    <i class="fas fa-search custom-text-color"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+
+
+
+
+    <script src="js/bootstrap-4.6.0/jquery-3.5.1.slim.min.js"> </script>
+    <script src="js/bootstrap-4.6.0/bootstrap.bundle.min.js"> </script>
+
+    <script src="js/skycons.js"></script>
+    <script defer type="module" src="js/main.js"></script>
+
+</body>
+
+
+</html>

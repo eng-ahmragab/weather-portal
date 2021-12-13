@@ -1,0 +1,68 @@
+
+/* Global */
+
+body {
+    background-color: #243A5E;
+}
+
+.custom-bg{
+    background-color: #35496B;
+}
+
+
+
+
+
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.center-container .container {
+    max-width: 450px;
+}
+
+
+
+
+
+
+
+#temperature {
+    cursor: pointer;
+}
+
+
+#temperature:hover{
+    color:#ffc107;
+}
+
+
+
+
+
+
+
+#searchForm{
+    margin-top: 60px;
+}
+
+
+
+/* change input glow effect to match color theme */
+.form-control:focus {
+    border-color:#ffc107;
+    box-shadow: 0 0 0 .2rem rgba(255,193,7, 0.25);
+}
+
+
+
+
+.custom-text-color{
+    color: #35496B;
+}
