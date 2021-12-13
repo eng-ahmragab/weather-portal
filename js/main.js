@@ -22,14 +22,12 @@ const errorAlertElement = document.getElementById("errorAlert");
 function renderError(error){
     errorAlertElement.innerHTML = `
     <div class="alert alert-danger alert-dismissible fade show mb-2 mx-1" role="alert">
-        <span id="errorMessage"></span>
+        ${error}
         <button class="close" data-dismiss="alert">
             <span> &times; </span>
         </button>
     </div>
     `;
-    const errorMessageElement = document.getElementById("errorMessage");
-    errorMessageElement.innerText = error;
 }
 
 
@@ -102,11 +100,11 @@ async function fetchWeatherData(lat, long, cityOrZip, units) {
         descriptionElement.innerText = description;
         cityNameElement.innerText = cityName;
         //set skycons
-        console.log("Icon: ", icon);
+        //console.log("Icon: ", icon);
         setIcons(icon, iconElement);
     } catch (err) {
-        console.error("Error: " + err.message);
-        renderError("Error: " + err.message);
+        console.error(err.message);
+        renderError(err.message);
     }
 
 }
